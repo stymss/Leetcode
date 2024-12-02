@@ -1,3 +1,5 @@
+from typing import List
+
 class Solution:
     # Boyer Moore's Voting Algorithm
     def majorityElement(self, nums: List[int]) -> int:
