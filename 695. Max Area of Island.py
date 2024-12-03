@@ -24,11 +24,13 @@ class Solution:
         if not self.isValid(grid, row, col) or grid[row][col] == 0 or visited[row][col]:
             return 0
 
+        # visit it
         visited[row][col] = True
 
-        # this cell will contribute 4 to the perimeter
+        # this cell will contribute 1 to the area
         island_cell_count = 1
 
+        # check all 4 directions
         directions = [(-1, 0), (1, 0), (0, -1), (0, 1)]
         for dr, dc in directions:
             next_row, next_col = row + dr, col + dc
