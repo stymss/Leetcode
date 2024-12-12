@@ -11,6 +11,7 @@ class Solution:
     def preorderTraversal(self, root: Optional[TreeNode]) -> List[int]:
         preorder, stack = [], []
 
+        # Check root
         if not root:
             return preorder
         stack.append(root)
